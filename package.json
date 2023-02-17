@@ -2,11 +2,12 @@
   "name": "myworkdayrecap_api",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "devStart": "nodemon server.js"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,10 @@
   },
   "homepage": "https://github.com/neetnet200/myworkdayrecap_api#readme",
   "dependencies": {
-    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "express-ejs-layouts": "^2.5.1"
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "dotenv": "^16.0.3",
     "nodemon": "^2.0.20"
   }
 }
